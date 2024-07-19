@@ -34,6 +34,13 @@ const Dl = styled.dl`
   max-width: 85%;
   margin: 0 auto;
   padding-bottom: 6rem;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: none;
+    padding: 0rem 3rem;
+  }
 `;
 
 const DescriptionContainer = styled.div`
@@ -41,17 +48,33 @@ const DescriptionContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid rgb(255, 255, 255, 0.2);
 
-  border: 1px solid rgb(255, 255, 255, 0.5);
+  @media (min-width: 768px) {
+    display: inline-block;
+    padding: 1.5rem 1rem;
+  }
+
   & > dt {
     color: rgb(255, 255, 255, 0.5);
     font-size: 1.2rem;
     font-weight: 500;
+
+    @media (min-width: 768px) {
+      margin-bottom: 2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
   }
 
   & > dd {
     color: #ffffff;
     font-size: 2rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
   }
 `;
 

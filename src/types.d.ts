@@ -22,6 +22,11 @@ type TPlanet = {
     internal: string;
     geology: string;
   };
+  sizes: {
+    mobile: string;
+    tablet: string;
+    desktop: string;
+  };
 };
 
 type TPlanetsData = TPlanet[];

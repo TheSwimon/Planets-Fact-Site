@@ -15,10 +15,6 @@ const router = createBrowserRouter([
     path: "/:BlogPostId",
     element: <PublicLayout />,
   },
-  {
-    path: "/:BlogPostId/:Topic",
-    element: <PublicLayout />,
-  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
