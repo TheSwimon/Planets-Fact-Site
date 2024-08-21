@@ -27,11 +27,6 @@ export default function BlogPost({ openNav, setOpenNav }: BlogPostProps) {
   });
 
   const isSmallScreen = useMediaQuery("(max-width:767px)");
-  const isMediumScreen = useMediaQuery(
-    "(min-width:768px) and (max-width:1023px)"
-  );
-  const isLargeScreen = useMediaQuery("(min-width:1024px)");
-
   return (
     <Section>
       <Navigation

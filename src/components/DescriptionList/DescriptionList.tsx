@@ -39,7 +39,7 @@ const Dl = styled.dl`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: none;
-    padding: 0rem 3rem;
+    padding: 0rem 3rem 4rem;
   }
 `;
 
